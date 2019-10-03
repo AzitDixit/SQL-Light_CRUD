@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Update Contact"
+        android:textSize="30dp"
+        android:textColor="#a0a"/>
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/design1"
+        android:paddingLeft="10dp"
+
+        android:layout_below="@id/text"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="Enter Name"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="25dp"
+        />
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/design1"
+        android:layout_below="@id/name1"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="Enter Number"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="25dp"
+        />
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#a10"
+        android:layout_below="@id/number1"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="Update"
+        android:textAllCaps="false"
+        android:textColor="#ECF0F1"
+        android:textSize="25dp"
+        />
+
+
+</RelativeLayout>

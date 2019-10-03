@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abc"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0.5"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact"
+        android:textColor="#ECF0F1 "
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_below="@id/textview"
+        android:textColor="#ECF0F1"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"/>
+    <EditText
+        android:id="@+id/create"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_below="@id/name"
+       android:background="@drawable/design"
+        android:textColor="#ECF0F1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:hint="Write Name Here"
+        android:inputType="textAutoComplete"
+        android:textColorHint="#ECF0F1"
+        android:paddingLeft="15dp"/>
+    <TextView
+        android:id="@+id/phn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone No."
+        android:layout_below="@id/create"
+        android:textColor="#ECF0F1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"/>
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_below="@id/phn"
+        android:background="@drawable/design"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:hint="Write Phone No. Hrere"
+        android:inputType="phone"
+        android:textColor="#ECF0F1"
+        android:textColorHint="#ECF0F1"
+        android:paddingLeft="15dp"/>
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/design"
+        android:layout_below="@id/phone"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Save"
+        android:onClick="save"
+        android:textAllCaps="false"
+        android:textColor="#ECF0F1"
+        android:textSize="25dp"
+        />
+    <Button
+        android:id="@+id/read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/design"
+        android:layout_below="@id/save"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Show Contact"
+        android:onClick="contact"
+        android:textAllCaps="false"
+        android:textColor="#ECF0F1"
+        android:textSize="25dp"
+        />
+
+
+
+</RelativeLayout>
